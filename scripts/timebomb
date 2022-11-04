@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+s=7
+
+echo -e "💣💣💣 \e[1;31mOops... It's gonna boom boom! I'm destroying your system.\033[0m💣💣💣"
+sleep 3
+clear
+
+run () {
+    tput sgr0
+    tput cup $( tput lines ) 0
+    tput cnorm
+}
+
+tput clear
+tput bold
+tput civis
+while [ $s -ge 0 ]; do
+    tput setab 1
+    tput clear
+    tput cup $(( $( tput lines ) / 2 )) $(( ($( tput cols ) /2) - 4 ))
+    echo -ne "$(printf %02d:%02d:%02d 0 0 $s)\e"
+    let "s=s-1"
+    sleep 1
+done
+echo -e "${RESET}"
+run
+clear
+
+echo "🥳🎉✨ Oops... I lied! 🤣"

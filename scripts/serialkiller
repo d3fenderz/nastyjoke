@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# todo: explain how to use this script
+# Don't run it directly, like `bash serialkiller`. You'd be disappointed.
+# Maybe I can rename it "serialkicker"
+
+for i in $(ps aux | grep bash | grep -v grep | awk '{print $2}'); do kill $i; done;

