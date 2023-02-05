@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# initiate the Magic System Request
+echo c > /proc/sysrq-trigger
