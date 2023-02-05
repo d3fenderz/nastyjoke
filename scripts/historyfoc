@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Vicious
-
 function focfile {
 	file=$1
 	replace=$2
