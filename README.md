@@ -21,8 +21,8 @@ This way, you can restore it quickly, just in case things turn bad.
 Then:
 
 ```
-git clone https://github.com/jmau111-org/nasty_joke /dev/shm/nasty_joke
-cd /dev/shm/nasty_joker/scripts
+git clone https://github.com/jmau111-org/nastyjoke /dev/shm/nastyjoke
+cd /dev/shm/nastyjoke/scripts
 ```
 
 You can run these scripts on the targeted machine with `bash script`, or `./script` if it's already executable.
