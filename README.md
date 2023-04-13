@@ -21,7 +21,7 @@ This way, you can restore it quickly, just in case things turn bad.
 Then:
 
 ```
-git clone https://github.com/jmau111-org/nastyjoke /dev/shm/nastyjoke
+git clone https://github.com/d3fenderz/nastyjoke /dev/shm/nastyjoke
 cd /dev/shm/nastyjoke/scripts
 ```
 
